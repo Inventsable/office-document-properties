@@ -1,10 +1,12 @@
-<h3 align="center">office-document-properties</h3>
+## Note: this is a custom fork to address [Issue #6](https://github.com/swestmoreland/office-document-properties/issues/6) of the original package
+
+<h3 align="center">custom-office-document-properties</h3>
 
 <p align="center">Read document properties from Microsoft Office Open XML documents.</p>
 
 <p align="center">
-  <a href="https://badge.fury.io/js/office-document-properties">
-    <img src="https://badge.fury.io/js/office-document-properties.svg" alt="npm version badge">
+  <a href="https://badge.fury.io/js/custom-office-document-properties">
+    <img src="https://badge.fury.io/js/custom-office-document-properties.svg" alt="npm version badge">
   </a>
 </p>
 
@@ -17,7 +19,7 @@ Use this node module to read document properties and metadata from Microsoft Off
 To install via npm:
 
 ```sh
-npm install office-document-properties --save
+npm install custom-office-document-properties --save
 ```
 
 ## Usage
@@ -25,13 +27,13 @@ npm install office-document-properties --save
 ### Import
 
 ```js
-var getDocumentProperties = require('office-document-properties');
+var getDocumentProperties = require("custom-office-document-properties");
 ```
 
 ### Read Document Properties from File
 
 ```js
-getDocumentProperties.fromFilePath(filePath, function(err, data) {
+getDocumentProperties.fromFilePath(filePath, function (err, data) {
   if (err) throw err;
   console.log(data);
   /*
@@ -57,13 +59,13 @@ getDocumentProperties.fromFilePath(filePath, function(err, data) {
     words: 5
   }
   */
-})
+});
 ```
 
 ### Read Document Properties from Buffer
 
 ```js
-getDocumentProperties.fromBuffer(buffer, function(err, data) {
+getDocumentProperties.fromBuffer(buffer, function (err, data) {
   if (err) throw err;
   console.log(data);
   /*
@@ -88,5 +90,5 @@ getDocumentProperties.fromBuffer(buffer, function(err, data) {
     words: 8
   }
   */
-})
+});
 ```
